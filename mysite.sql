@@ -20,10 +20,10 @@ SET time_zone = "+00:00";
 -- Database: `mysite`
 --
 -- to create a new database
-CREATE DATABASE test;
+CREATE DATABASE mysite;
 
 -- to use database
-use test;
+use mysite;
 -- --------------------------------------------------------
 
 --
