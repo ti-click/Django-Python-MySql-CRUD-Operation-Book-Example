@@ -1,18 +1,38 @@
-# Django-Python-CRUD-Operation-Book-Example
-This is a simple Django project to demonstrate Django CRUD functionality using Python and MySql
+# Django Python CRUD Operation Book Example
+This is a simple Django project to demonstrate Django CRUD functionality using Python and TiDB
 
-# Required Install Packages
+# 1. Required TiDB Cluster
+TODO
 
-For Windows : pip install mysql-connector
+# 2. Import data into TiDB Cluster
+```
+$ mysql -u root -h ${url} -P 4000 -p < /workspace/Django-Python-MySql-CRUD-Operation-Book-Example/mysite.sql
+password:
+```
 
-For Ubuntu /Linux : sudo apt-get install python3-pymysql
+# 3. Update the setting.py file
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mysite',
+        'USER': 'root',
+        'PASSWORD': '${password}',
+        'HOST': '${url}',
+        'PORT': '4000'
+    }
+}
+```
 
-pip install mysqlclient-1.3.13-cp37-cp37m-win32.whl
-Download from this link : https://bit.ly/2FNn3e5
+# 4. Run python command
+```
+$ cd /workspace/Django-Python-MySql-CRUD-Operation-Book-Example/mysite
+$ python manage.py migrate
+$ python manage.py runserver 0.0.0.0:7000
+```
 
-# Recommended
-Make sure that all required packages should be installed in your virtual environment.
+# 5. Then open the URL
+TODO
 
-# Credit & Reference :
-Mr.Vitor Freitas
-https://simpleisbetterthancomplex.com/
+# Thanks 
+This example app is reference [Django-Python-MySql-CRUD-Operation-Book-Example](https://github.com/pdjani91/Django-Python-MySql-CRUD-Operation-Book-Example)
