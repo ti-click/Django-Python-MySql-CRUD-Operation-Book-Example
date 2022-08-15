@@ -1,7 +1,7 @@
 # Django Python CRUD Operation Book Example
 This is a simple Django project to demonstrate Django CRUD functionality using Python and TiDB
 
-[Deom Link](https://gitpod.io/#/github.com/ti-click/Django-Python-MySql-CRUD-Operation-Book-Example)
+[Demo Link](https://gitpod.io/#/github.com/ti-click/Django-Python-MySql-CRUD-Operation-Book-Example)
 
 # 1. Ready TiDB Cluster
 ### 1.1 Get the Gitpod public IP
